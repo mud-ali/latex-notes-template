@@ -9,10 +9,13 @@
 \title{Examples}
 \maketitle
 
+This file demonstrates the features provided by the mudasir class. Most examples are AI generated as a simple demo of the visual style of the various commands.
+
+\section*{Math Macro Examples}
 \begin{align*}
-        \sni{1} \frac{1}{n^2} = \frac{\pi^2}{6} \\
-        \df{f(x)}{\int_0^x f(t) dt} = 1 \\
-        \cancelto{0}{\int_0^x f(t) dt}
+    \sni{1} \frac{1}{n^2} = \frac{\pi^2}{6} \\
+    \df{f(x)}{\int_0^x f(t) dt} = 1 \\
+    \cancelto{0}{\int_0^x f(t) dt}
 \end{align*}
 
 Derivatives:
@@ -45,12 +48,136 @@ Laplace transform:
     \laplace{f(t)} = F(s) = \int_0^{\infty} f(t)e^{-st}\,\diff{t}
 \]
 
-Inline code example: \noindent\code{disp('Hello, world!')}
+Inline code example: \code{disp('Hello, world!')}
 
-Block code example:
+\section*{Theorem-like Environments}
+\begin{theorem}
+Let $x\in\RR$. Then $x^2\ge0$.
+\end{theorem}
 
+\begin{theorem*}
+The square of any real number is nonnegative (unnumbered).
+\end{theorem*}
+
+\begin{lemma}
+If $a>0$ and $b>0$ then $ab>0$.
+\end{lemma}
+
+\begin{lemma*}
+An unnumbered lemma example.
+\end{lemma*}
+
+\begin{proposition}
+Proposition: addition of reals is commutative.
+\end{proposition}
+
+\begin{corollary}
+Corollary: immediate consequence of the proposition.
+\end{corollary}
+
+\section*{Definitions, Claims, and Examples}
+\begin{definition}
+Definition of continuity at a point: A function $f$ is continuous at $x=a$ if $\lim_{x\to a} f(x) = f(a)$.
+\end{definition}
+
+\begin{definition*}
+An unnumbered definition.
+\end{definition*}
+
+\begin{claim}
+This is a sample claim with a short justification.
+\end{claim}
+
+\begin{claim*}
+Unnumbered claim demonstration.
+\end{claim*}
+
+\begin{example}
+Example: compute $1+1=2$.
+\end{example}
+
+\section*{Problems and Exercises}
+\begin{problem}
+Compute the integral $\int_0^1 x^2\,dx$.
+\end{problem}
+
+\begin{niceprob}
+A highlighted problem with a star symbol.
+\end{niceprob}
+
+\begin{exercise}
+Exercise: Show that the derivative of $e^{x}$ is $e^{x}$.
+\end{exercise}
+
+\begin{exercise*}
+Unnumbered exercise: verify a trivial identity.
+\end{exercise*}
+
+\section*{Notes, Remarks, Questions, Answers}
+\begin{note}
+This is a side note (unnumbered by style).
+\end{note}
+
+\begin{remark}
+Remark: pay attention to edge cases.
+\end{remark}
+
+\begin{remark*}
+An unnumbered remark.
+\end{remark*}
+
+\begin{question}
+What is the limit of $\sin x / x$ as $x\to0$?
+\end{question}
+
+\begin{question*}
+An unnumbered question.
+\end{question*}
+
+\begin{answer}
+Answer: $1$.
+\end{answer}
+
+\begin{answer*}
+An unnumbered answer entry.
+\end{answer*}
+
+\begin{reminder}
+Reminder: check assumptions in proofs.
+\end{reminder}
+
+\begin{reminder*}
+Unnumbered reminder.
+\end{reminder*}
+
+\begin{warning}
+Warning: don't divide by zero.
+\end{warning}
+
+\begin{warning*}
+Unnumbered warning.
+\end{warning*}
+
+\section*{Solution, Walkthrough, and Custom List}
+\begin{problem}
+Prove that $2+2=4$.
+\begin{soln}
+Trivial by arithmetic.
+\end{soln}
+\end{problem}
+
+\begin{walkthrough}
+This is a brief walkthrough for a sample solution.
+\end{walkthrough}
+
+\begin{walk}
+\ii First step.
+\ii Second step.
+\ii Third step.
+\end{walk}
+
+\section*{Code (minted)}
+Block code example (from `test.m`):
 \inputminted[frame=single, linenos]{matlab}{test.m}
-
-
 
 \end{document}
